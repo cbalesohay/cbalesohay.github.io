@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("JV12ORWVQeoCFTaMF");
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbarbar">
+        <div class="logo">
+          <img src="./img/cpurple2.svg" alt="logo">
+        </div>
+        <div class="logoLine"></div>
+        <ul class="nav">
+          <li class="links"><a class="links" href="#home">Home</a></li>
+          <li class="links"><a class="links" href="#about">About</a></li>
+          <li class="links"><a class="links" href="#works">Works</a></li>
+          <li class="links"><a class="links" href="#contact">Contact</a></li>
+        </ul>
+        <div class="resume">
+          <button>Resume</button>
+        </div>
+      </div>
+    </div>
+    <div class="verticalLine"></div>
+    <div class="home" id="home">
+      <h1>Welcome!</h1>
+      <h2>My name is, </h2>
+      <h1>Christopher Bailey</h1>
+      <div class="horizontalLine"></div>
+      <img src="./img/cartoonme.jpeg" alt="">
+    </div>
+    <div class="about">
+      <h1 id="about">About Me</h1>   
+      <h3>I am a Junior Software Engineer wanting to help people and provide for my family. While serving in the Marine Corps I decided to pursue coding. After my service ended I found myself building websites and going to school to be a Software Engineer. I spend my free time enjoying my family and learning more about Web Development.</h3>
+    </div>
+    <div class="works">
+      <h1>Works I've Done</h1>
+      <div class="workcontainer" id="works">
+        <div class="work ab1">
+          <img src="./img/robofriends.png" alt="Robo Friends">
+        </div>
+        <div class="work ab2">
+          <img src="./img/calcapp.png" alt="Calculator App">
+        </div>
+        <div class="work ab3">
+          <img src="./img/luckyshub.png" alt="Lucky Shrub Website">
+        </div>
+        <div class="work ab4">
+          <img src="./img/greengradient.png" alt="Gradient Generator">
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div id="contact">
+        <form action="" method="post" class="form" id="contact-form">
+          <h1>Contact Me</h1>
+          <input placeholder="Name" type="text" name="name" id="name" required/>
+          <input placeholder="Email" type="text" name="email" id="email" required/>
+          <textarea placeholder="Write your message" type="text" name="message" id="message" rows="10" required></textarea>
+          <button type="submit" onclick="sendMail()">Send</button>
+          <div class="popup" id="popup">Your Message has been sent :)</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
