@@ -26,6 +26,12 @@
     background-color: #edeaea;
 }
 
+@media only screen and (max-width: 780px) {
+    .navbar {
+        display: none;
+    }
+}
+
 /* FIgure Out */
 .navbarbar {
     width: 100vw;
@@ -36,14 +42,6 @@
 
 .logo {
     cursor: pointer;
-}
-
-@media only screen and (max-width: 780px) {
-    .logo {
-        display: flex;
-        top: 0;
-        left: 0;
-    }
 }
 
 .logoLine {
@@ -199,13 +197,6 @@
     position: relative;
 }
 
-@media only screen and (max-width: 600px) {
-    .works {
-        height: 200vh;
-        scroll-snap-align: top;
-    }
-}
-
 .works h1 {
     color: #8C52FF;
     font-weight: 400;
@@ -229,9 +220,7 @@
 
 @media only screen and (max-width: 600px) {
     .workcontainer {
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 20px;
+        display: none;
     }
 }
 
@@ -247,6 +236,17 @@
     width: 290px;
     height: 150px;
     padding: 5px;
+}
+
+.githubicon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .githubicon {
+        display: flex;
+        cursor: pointer;
+    }
 }
 
 .contact {
